@@ -8,25 +8,19 @@ body {
     background-color: #f8f9fa;
     padding-bottom: 70px;
 }
-#exist-icon{
-    font-size: 30px;
+
+#main-menu{
+    margin-inline: 0 !important;
+    padding: 0 !important;
 }
 /* Categories */
 .categories-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 0 -1rem;
-    padding: 0 1rem;
 }
 
-.categories.nav{
-    flex-wrap: unset;
-    padding-left: unset;
-    margin-bottom: unset;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 0;
+.categories.nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
 }
 
 .nav-link.category-btn {
@@ -41,9 +35,18 @@ body {
     transition: all 0.3s ease;
     color: var(--text-color);
 }
-
 .category-btn i {
     font-size: 1.25rem;
+}
+
+@media (max-width: 500px) {
+    .nav-link.category-btn{
+        font-size: 12px !important;
+        padding: 8px 16px;
+    }
+    .category-btn i {
+        font-size: 14px;
+    }
 }
 
 .category-btn.nav-link.active{

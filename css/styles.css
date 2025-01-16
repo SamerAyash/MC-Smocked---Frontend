@@ -10,14 +10,22 @@ body {
 }
 
 #main-menu{
+    position: relative;
+    top: 180px;
     margin-inline: 0 !important;
     padding: 0 !important;
 }
-/* Categories */
-.categories-wrapper {
+nav.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 }
 
+/* Categories */
+
 .categories.nav {
+    position: fixed;
     flex-direction: column;
     gap: 0.5rem;
     padding: 0;
